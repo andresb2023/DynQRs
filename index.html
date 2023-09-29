@@ -49,9 +49,9 @@
   </head>
   <body>
     <script>
-      const AS_URL_BASE= "https://script.google.com/macros/s/AKfycbxrUt6gDGzxK7iWqZ7GG88aDK-3NCmYGgpXfl_riPwzt0Ia-a2UOuoa55CS1ulgbnFp/exec";
+      const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbxrUt6gDGzxK7iWqZ7GG88aDK-3NCmYGgpXfl_riPwzt0Ia-a2UOuoa55CS1ulgbnFp/exec";
       var url=document.location.href;
-      var k= url.substr(url.lastIndexOf("k=")+2; 
+      var k= url.substr(url.lastIndexOf("k=")+2); 
       if(k){
         fetch(AS_URL_BASE+'?K='+K)
         .then(r=> r.text())
